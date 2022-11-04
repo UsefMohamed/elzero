@@ -12,3 +12,58 @@ button {
 ul {
   list-style: none;
 }
+
+.navbar {
+  background-color: #337ab7;
+  padding: 20px 15px !important;
+  direction: rtl;
+}
+
+.navbar .dropdown > a {
+  color: white !important;
+}
+
+.navbar .navbar-nav li .dropdown-item {
+  color: #fff;
+  padding: 15px !important;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .navbar-nav li .dropdown-item:hover {
+  padding-right: 25px !important;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #2d3642;
+  margin-left: 0.6rem;
+  width: 270px;
+  border: 1px solid #363f4a;
+  border-top: 3px solid #fff;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  overflow: hidden;
+  text-align: unset;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.dropdown-item:hover {
+  background-color: #363f4a !important;
+}
+
+@media (max-width: 992px) {
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    width: 100%;
+  }
+}
